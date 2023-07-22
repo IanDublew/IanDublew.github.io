@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ian.W</title>
+    <link rel="icon" href="IW.svg" type="image/svg">
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="fixed.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  data-spy="scroll" data-target="#navbarResponsive">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">
+            <h2>Ian.W</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li  class="nav-item">
+                    <a class="nav-link"  href="about.html">ABOUT ME</a>
+                </li>
+                <li  class="nav-item">
+                    <a class="nav-link"  href="contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+        <div class="banner-area">
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="mobile_website.gif">
+                        <img src="website.gif" alt="INTRO GIF">
+                    </picture>
+                    <a href="https://github.com/IanDublew" class="banner-btn">GitHub Projects</a> 
+                </div>
+            </div>
+
+
+            
+            <div class="single-banner">
+                <div class="banner-img">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="mobile_techstack.gif">
+                        <img src="techstack.gif" alt="GitHub Projects">
+                    </picture>
+                </div>
+            </div>
+        </div>
+            
+
+    <!--- Script Source Files -->
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+        $('.banner-area').slick({
+            autoplay: true,
+            speed: 400,
+            arrows: false,
+            dots: true,
+            fade: true
+        })
+    </script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+ <!--- End of Script Source Files -->
+
+  
+</body>
+
+</html>

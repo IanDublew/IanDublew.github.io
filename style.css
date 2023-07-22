@@ -1,0 +1,197 @@
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family:'Lato', sans-serif ;
+}
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+    color: black;
+}
+/* styles.css */
+.navbar {
+    background-color: black; /* Ensure there are no typos or syntax errors */
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00C2CB;
+}
+
+
+.banner-area,
+.single-banner {
+    position: relative;
+}
+
+.banner-img img {
+    display: block;
+    width:100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute  ;
+    top: 70%; /* Adjust the vertical position as needed */
+    left: 50%; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    color: #00C2CB;
+    font-weight: bold;
+}
+
+.banner-text h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    color: whitesmoke;
+    margin: 0;
+}
+
+.banner-text a,
+p,
+strong {
+    color: white;
+
+}
+.banner-text .list-unstyled .fas {
+	font-size: 0.375rem;
+	line-height: 1.625rem;
+}
+.banner-text   .list-unstyled .media .media-body {
+	margin-left: 0.5rem;
+    color: #fff;
+}
+
+.hr.socket {
+    color: white;
+}
+
+.banner-btn {
+    position: absolute;
+    top: 70%; /* Adjust the vertical position as needed */
+    left: 50%; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: #00C2CB;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.banner-btn:hover {
+    background-color:crimson;
+    text-decoration: none;
+  }
+/* Styles for the card container */
+.card-container {
+    display: flex;
+    justify-content: space-between; /* Distribute cards with space in between */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+  }
+  
+  /* Styles for each card */
+  .card {
+    flex: 0 0 calc(25% - 20px); 
+    margin: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Styles for the card image */
+  .card-img img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Styles for the card content */
+  .card-content {
+    padding: 30px;
+  }
+  
+  .card-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  
+.slick-dots {
+    position: absolute;
+    bottom: 100px;
+    list-style: none;
+    display: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    position: relative;
+    background-color:#00C2CB;
+    opacity: .5;
+    height: 3px;
+    width: 50px;
+    padding: 0;
+    font-size: 0;
+}
+
+.slick-dots lit.slick-active button {
+    color:#00C2CB;
+    opacity: 4;
+}
+
+
+  
+  
+ 
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+    /* About page banner for mobile */
+    body[data-page="about.html"] .banner-img img {
+        content: url("mobile_about_me.gif");
+        /* Add any other specific styles for about page mobile banner here */
+    }
+
+    /* Contact page banner for mobile */
+    body[data-page="contact"] .banner-img img {
+        content: url("mobile_contact.gif");
+        /* Add any other specific styles for contact page mobile banner here */
+    }
+
+    /* Index page banner for mobile */
+    body[data-page="index"] .banner-img img {
+        content: url("mobile_website.gif");
+        /* Add any other specific styles for index page mobile banner here */
+    }
+}
