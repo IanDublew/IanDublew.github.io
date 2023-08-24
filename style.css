@@ -103,36 +103,35 @@ strong {
     justify-content: space-between; /* Distribute cards with space in between */
     flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
   }
-  
+  .card-container h1{
+    color: #00C2CB;
+  }
   /* Styles for each card */
   .card {
-    flex: 0 0 calc(25% - 20px); 
-    margin: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    border: none;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color:black;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .card-title {
+    font-size: 1.25rem;
+    color: #00C2CB;
   }
   
-  /* Styles for the card image */
-  .card-img img {
-    max-width: 100%;
-    height: auto;
+  .card-text {
+    font-size: 0.875rem;
   }
   
-  /* Styles for the card content */
-  .card-content {
-    padding: 30px;
+  .card-img-top {
+    max-height: 200px;
+    object-fit: cover;
   }
   
-  .card-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .card-content p {
-    font-size: 16px;
-    margin-bottom: 15px;
+  .badge-success {
+    background-color:green;
   }
   
   
