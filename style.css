@@ -133,7 +133,9 @@ strong {
   .badge-success {
     background-color:green;
   }
-  
+  .badge-incomplete{
+    background-color:grey;
+  }
   
 .slick-dots {
     position: absolute;
